@@ -29,7 +29,7 @@ module.enable = function(self)
     local top = 0
     for id, frame in pairs(dodge_frames) do
       if frame:IsVisible() and frame:GetTop() then
-        top = math.max(top, frame:GetTop())
+        top = math.max(top, frame:GetTop()) + 8
       end
     end
 
